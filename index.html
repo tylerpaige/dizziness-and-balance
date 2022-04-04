@@ -35,7 +35,6 @@
       font-size: 125%;
     }
 
-
     body {
       font-family: nimbus-sans, sans-serif;
       font-weight: 300;
@@ -45,7 +44,22 @@
       background: var(--lilac);
       color: var(--kelly-green);
       background: black;
-      margin: 1rem;
+      margin: 0;
+    }
+
+    header {
+      background-color: var(--lilac);
+      color: var(--kelly-green);
+    }
+
+    .intro {
+      background: var(--yellow);
+      font-family: nimbus-sans-condensed, sans-serif;
+      padding: 1.4em 1em
+    }
+
+    .intro p {
+      transform: rotate(-0.3deg);
     }
 
     h2 {
@@ -78,6 +92,14 @@
       color: #646464;
     }
 
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 0;
+    }
+
     table,
     thead,
     td,
@@ -98,21 +120,24 @@
       margin-bottom: 0.5rem;
     }
 
+    header,
+    section {
+      padding: 1rem;
+    }
+
     section {
       position: relative;
-      margin-bottom: 2rem;
+      /* margin-bottom: 2rem; */
     }
 
-    .section--narrow {
-      max-width: 21rem;
+
+    .legend {
+      background: var(--kelly-green);
+      color: var(--lilac);
+      border-bottom: solid var(--blue) 2vh;
     }
 
-    legend {
-      padding: 0.95rem;
-      padding-bottom: 0.88rem;
-      padding-top: 1.02rem;
-      background: #1e1e1e;
-    }
+    legend {}
 
     legend td:last-child {
       padding-left: 1rem;
@@ -165,6 +190,111 @@
     .course-history td {
       padding: 0.25rem;
     }
+
+    .legend .tag--figma,
+    .legend .tag--slides,
+    .legend .tag--docs {
+      border: 1px solid black;
+    }
+
+    .course-history th::after {
+      content: ", ";
+      display: inline-block;
+      width: 0.4em;
+    }
+
+    .course-history tr {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    .course-history td {
+      display: inline;
+      padding: 0;
+    }
+
+    .course-history td::after {
+      content: " ";
+      display: inline-block;
+      width: 0.4em;
+    }
+
+    .course-history td:nth-child(2) {
+      font-weight: bold;
+      color: var(--lavender);
+    }
+
+    @media screen and (max-width: 45rem) {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-align: center;
+      }
+
+      header,
+      section {
+        padding: 0.4rem;
+      }
+
+      table {
+        border: 0;
+        border-collapse: collapse;
+      }
+
+      header,
+      .intro {
+        max-width: none;
+      }
+
+      .legend tr {
+        display: block;
+        margin-bottom: 1.5em;
+      }
+
+      .legend td:first-child {
+        display: inline-block;
+      }
+
+      .legend td:last-child {
+        padding-left: 0;
+        display: inline;
+      }
+
+      .resources table,
+      .resources tbody,
+      .resources tr,
+      .resources td:last-child {
+        display: block;
+      }
+
+      .resources tr {
+        padding: 0.7em 0.2em;
+        margin-bottom: 2.2em;
+      }
+
+      resources td:first-child,
+      .resources td:nth-child(2),
+      .resources td:last-child {
+        padding: 0;
+      }
+
+      .resources .tag {
+        transform: none;
+        line-height: 1.6;
+      }
+    }
+
+    @media screen and (min-width: 45.01em) {
+      main {
+        max-width: 26em;
+        margin: 8vw;
+        transform: rotate(0.3deg);
+      }
+    }
   </style>
   <link rel="canonical" href="https://dizziness.andbalance.center">
   <meta name="description" content="Tyler Paige's teaching materials around code, narratives, and design">
@@ -180,10 +310,10 @@
 
 <body>
   <main role="main" class="wrapper">
-    <header class="section--narrow">
+    <header>
       <h1>Center for Dizziness and Balance</h1>
     </header>
-    <section class="section--narrow">
+    <section class="intro">
       <p>This is the teaching portal for <a href="https://tylerpaige.com">Tyler Paige</a>. I will list all of my
         teaching materials here, like syllabi, workshops, and lectures.</p>
       <p>The throughline between my teaching and my creative practice is to find useful disorientations: misheard
@@ -191,7 +321,7 @@
         vividness when a truism feels deep. Therefore, the name here is taken from a rehabilitation center seen
         driving 65mph down the Garden State Parkway—the center between dizziness and balance.</p>
     </section>
-    <section>
+    <section class="legend">
       <h2>Legend</h2>
       <legend>
         <table>
