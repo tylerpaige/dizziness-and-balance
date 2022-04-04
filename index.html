@@ -85,11 +85,16 @@
 
     a {
       color: inherit;
+      text-decoration-color: var(--kelly-green);
+      text-decoration-skip: none;
+      text-decoration-skip-ink: none;
     }
 
     a:visited {
       color: var(--purple);
       color: #646464;
+      text-decoration-color: #646464;
+
     }
 
     table {
@@ -296,6 +301,70 @@
       }
     }
   </style>
+  <script>
+    const fadeIn = (element) => {
+      return new Promise((resolve) => {
+        const handleAnimationEnd = () => {
+          resolve();
+          element.removeEventListener("transitionend", handleAnimationEnd);
+        }
+        element.addEventListener("transitionend", handleAnimationEnd);
+        element.style.removeProperty("color");
+        element.style.setProperty("transition", "color 1000ms linear");
+      })
+    }
+
+    const fadeOut = (element) => {
+      return new Promise((resolve) => {
+        const handleAnimationEnd = () => {
+          resolve();
+          element.removeEventListener("transitionend", handleAnimationEnd);
+        }
+        element.addEventListener("transitionend", handleAnimationEnd);
+        element.style.setProperty("color", "transparent");
+        element.style.setProperty("transition", "color 1000ms linear");
+      })
+    }
+
+    const fadeInSet = (elements) => {
+      const promises = elements.map(e => fadeIn(e));
+      return Promise.all(promises);
+    }
+
+    const fadeOutSet = (elements) => {
+      const promises = elements.map(e => fadeOut(e));
+      return Promise.all(promises);
+    }
+
+    const wait = (duration) => {
+      return new Promise((resolve) => {
+        setTimeout(resolve, duration);
+      });
+    };
+
+    const loop = (first, second, third, all) => {
+      return wait(12 * 1000)
+        .then(() => (fadeOutSet(first)))
+        .then(() => wait(4 * 1000))
+        .then(() => (fadeOutSet(second)))
+        .then(() => wait(2 * 1000))
+        .then(() => (fadeOutSet(third)))
+        .then(() => wait(6 * 1000))
+        .then(() => (fadeInSet(all)))
+        .then(() => wait(10 * 1000))
+        .then(() => loop(first, second, third, all))
+    }
+
+    const init = () => {
+      const first = [...document.querySelectorAll(".tag")];
+      const second = [...document.querySelectorAll("a")];
+      const third = [...document.querySelectorAll("p, th, td, h1, h2, h3, h4, h5, h6")];
+      const all = [].concat(first, second, third);
+      loop(first, second, third, all);
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
   <link rel="canonical" href="https://dizziness.andbalance.center">
   <meta name="description" content="Tyler Paige's teaching materials around code, narratives, and design">
   <meta name="robots" content="index,follow">
