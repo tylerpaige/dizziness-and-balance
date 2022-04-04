@@ -343,13 +343,13 @@
     };
 
     const loop = (first, second, third, all) => {
-      return wait(12 * 1000)
+      return wait(25 * 1000)
         .then(() => (fadeOutSet(first)))
-        .then(() => wait(4 * 1000))
+        .then(() => wait(3 * 1000))
         .then(() => (fadeOutSet(second)))
-        .then(() => wait(2 * 1000))
+        .then(() => wait(1 * 1000))
         .then(() => (fadeOutSet(third)))
-        .then(() => wait(6 * 1000))
+        .then(() => wait(3 * 1000))
         .then(() => (fadeInSet(all)))
         .then(() => wait(10 * 1000))
         .then(() => loop(first, second, third, all))
@@ -383,7 +383,7 @@
   <meta name="twitter:title" content="Center for Dizziness and Balance">
   <meta name="twitter:description" content="Tyler Paige's teaching materials around code, narratives, and design">
   <meta name="twitter:image" content="https://dizziness.andbalance.center/promo.gif">
-  
+
   <link rel="stylesheet" href="https://use.typekit.net/ngi2oai.css">
 </head>
 
