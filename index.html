@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Center for Dizziness and Balance</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --red: #E43400;
+      --cyan: #00A4E6;
+      --yellow: #FAEA3E;
+      --orange: #FFA935;
+      --pale-green: #A0DD87;
+      --blue: #0048C1;
+      --violet: #9F1994;
+      --pale-blue: #9BC8E5;
+      --lavender: #E6ADFF;
+      --lilac: #D9DDFF;
+      --kelly-green: #008000;
+      --brown: #633800;
+      --teal: #00848B;
+      --purple: #592173;
+      --bright-green: #34DA62;
+      --black: #000000;
+      --white: #ffffff;
+      --gold: #FFB416
+    }
+
+    html {
+      font-size: 125%;
+    }
+
+
+    body {
+      font-family: nimbus-sans, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      background: var(--lilac);
+      color: var(--kelly-green);
+      background: black;
+      margin: 1rem;
+    }
+
+    h2 {
+      font-size: 1.33rem;
+      line-height: 1rem;
+    }
+
+    h1 {
+      font-size: 1.777rem;
+      line-height: 1.5rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: nimbus-sans-extended, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:visited {
+      color: var(--purple);
+      color: #646464;
+    }
+
+    table,
+    thead,
+    td,
+    th {
+      text-align: left
+    }
+
+    table td {
+      vertical-align: top;
+      padding: 0.05rem;
+    }
+
+    ul {
+      padding-left: 0.9em;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .section--text {
+      max-width: 32rem;
+    }
+
+    legend {
+      padding: 0.95rem;
+      padding-bottom: 0.88rem;
+      padding-top: 1.02rem;
+      background: #1e1e1e;
+    }
+
+    legend td:last-child {
+      padding-left: 1rem;
+    }
+
+    .tag {
+      font-family: nimbus-sans-condensed, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 0.563em;
+      padding: 0.2em 0.75em;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      transform: translateY(-7%);
+    }
+
+    .tag--lecture {
+      background-color: var(--red);
+      color: var(--white);
+    }
+
+    .tag--reference {
+      background-color: var(--blue);
+      color: var(--bright-green);
+    }
+
+    .tag--exercise {
+      background-color: var(--purple);
+      color: var(--gold);
+    }
+
+    .tag--figma,
+    .tag--slides,
+    .tag--docs {
+      background-color: var(--kelly-green);
+      color: var(--lilac);
+      border-radius: 25% / 100%;
+    }
+
+    .resources td:last-child {
+      padding-left: 0.5em;
+    }
+
+    .resource__title {
+      margin-right: 1em;
+    }
+
+    .course-history td {
+      padding: 0.25rem;
+    }
+  </style>
+  <link rel="canonical" href="https://dizziness.andbalance.center">
+  <meta name="description" content="Tyler Paige's teaching materials around code, narratives, and design">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Center for Dizziness and Balance">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dizziness.andbalance.center">
+  <meta property="og:description" content="Tyler Paige's teaching materials around code, narratives, and design">
+  <meta property="og:image" content="https://tylerpaige.com/images/flags-golden-spiral.gif">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="https://use.typekit.net/ngi2oai.css">
+</head>
+
+<body>
+  <main role="main" class="wrapper">
+    <div class="content">
+      <header>
+        <h1>Center for Dizziness and Balance</h1>
+      </header>
+      <section class="section--text">
+        <p>This is the teaching portal for <a href="https://tylerpaige.com">Tyler Paige</a>. I will list all of my
+          teaching materials here, like syllabi, workshops, and lectures.</p>
+        <p>The throughline between my teaching and my creative practice is to find useful disorientations: misheard
+          phrases that spark interest; quick glances at the clock when a second feels strangely longer; sudden
+          vividness when a truism feels deep. Therefore, the name here is taken from a rehabilitation center seen
+          driving 65mph down the Garden State Parkway—the center between dizziness and balance.</p>
+      </section>
+      <section>
+        <h2>Legend</h2>
+        <legend>
+          <table>
+            <tr>
+              <td><span class="tag tag--reference">Reference</span></td>
+              <td>Instructional guides or otherwise files that describe how to do something</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--lecture">Lecture</span></td>
+              <td>Like references, but less concerned with practical things</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--exercise">Exercise</span></td>
+              <td>Activies you can do to gear your brain towards some larger objective</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--figma">Figma</span></td>
+              <td>View-only access to a Figma file</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--slides">Slides</span></td>
+              <td>View-only access to a Google Slides document</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag--docs">Docs</span></td>
+              <td>View-only access to a Google Docs document</td>
+            </tr>
+          </table>
+        </legend>
+      </section>
+      <section>
+        <h2>Resources</h2>
+        <table class="resources">
+          <tr>
+            <td><span class="tag tag--exercise">Exercise</span></td>
+            <td><span class="tag tag--docs">Docs</span></td>
+            <td><a
+                href="https://docs.google.com/document/d/1Aa0Dxoc_JOIx6x0kWDJ86h8QHYiz-FpdAeJnmL9Cm7E/edit?usp=sharing"><span
+                  class="resource__title">Build a "business card" style webpage</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--exercise">Exercise</span></td>
+            <td><span class="tag tag--docs">Docs</span></td>
+            <td><a
+                href="https://docs.google.com/document/d/1X3AL7YNUqO1HnF_tdvib4ifvZWHBGoZuEc6IEjgX2wY/edit?usp=sharing"><span
+                  class="resource__title">Analyze a wireframe for a portfolio website</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--slides">Slides</span></td>
+            <td><a
+                href="https://docs.google.com/presentation/d/1yvebr5oRjGnhe8_kVcYEvdybI5nfP-DDLHFCxpLw0pU/edit?usp=sharing"><span
+                  class="resource__title">How to document your work</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--slides">Slides</span></td>
+            <td><a
+                href="https://docs.google.com/presentation/d/1HfKL1cl-YjKAdb5tPyDixchiGMYKR77l4hda29cD808/edit?usp=sharing"><span
+                  class="resource__title">What makes a good artist website?</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--slides">Slides</span></td>
+            <td><a
+                href="https://docs.google.com/presentation/d/1qVuKW_W3i-bDt-5xnPvStkDyAg4eD9ltGkUBLpm208Y/edit?usp=sharing"><span
+                  class="resource__title">How to print your work</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--figma">Figma</span></td>
+            <td><a href="https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=2%3A2"><span
+                  class="resource__title">Using art direction to make a wireframe come alive</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--figma">Figma</span></td>
+            <td><a
+                href="https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=7%3A2524"><span
+                  class="resource__title">Limitations &amp; opportunities with typography on the Web</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--figma">Figma</span></td>
+            <td><a href="https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=2%3A3"><span
+                  class="resource__title">Finding a sense of direction with responsive typography</span></a><span
+                class="resource__description">(using type scales)</span></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--figma">Figma</span></td>
+            <td><a href="https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=27%3A62"><span
+                  class="resource__title">Grid systems on the web</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--figma">Figma</span></td>
+            <td><a href="https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=2%3A4"><span
+                  class="resource__title">Responsive images</span></a></td>
+          </tr>
+          <tr>
+            <td><span class="tag tag--reference">Reference</span></td>
+            <td><span class="tag tag--figma">Figma</span></td>
+            <td><a
+                href="https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=10%3A2727"><span
+                  class="resource__title">Quickstart for coding your own artist website</span></a><span
+                class="resource__description">An introduction to templating systems, along with a boilerplate/starter
+                project</span></td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Course history</h2>
+        <table class="course-history">
+          <thead>
+            <th>Title</th>
+            <th>Objective</th>
+            <th>Time</th>
+            <th>Place</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Design 3B</td>
+              <td>Making a portfolio</td>
+              <td>Spring 2022</td>
+              <td>Rutgers University</td>
+            </tr>
+            <tr>
+              <td>Technology A</td>
+              <td>Understanding technology and politics as mutually constitutive</td>
+              <td>Fall 2021</td>
+              <td>Pratt Institute</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
