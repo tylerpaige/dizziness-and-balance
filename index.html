@@ -47,21 +47,6 @@
       margin: 0;
     }
 
-    header {
-      background-color: var(--lilac);
-      color: var(--kelly-green);
-    }
-
-    .intro {
-      background: var(--yellow);
-      font-family: nimbus-sans-condensed, sans-serif;
-      padding: 1.4em 1em
-    }
-
-    .intro p {
-      transform: rotate(-0.3deg);
-    }
-
     h2 {
       font-size: 1.33rem;
       line-height: 1rem;
@@ -132,21 +117,11 @@
 
     section {
       position: relative;
-      /* margin-bottom: 2rem; */
     }
 
-
-    .legend {
-      background: var(--kelly-green);
-      color: var(--lilac);
-      border-bottom: solid var(--blue) 2vh;
-    }
-
-    legend {}
-
-    legend td:last-child {
-      padding-left: 1rem;
-    }
+    /* * * * *
+    ** TAGS **
+    ** * * * */
 
     .tag {
       font-family: nimbus-sans-condensed, sans-serif;
@@ -184,6 +159,53 @@
       border-radius: 25% / 100%;
     }
 
+    /* * * * * *
+    ** HEADER **
+    ** * * * * */
+
+    header {
+      background-color: var(--lilac);
+      color: var(--kelly-green);
+    }
+
+    /* * * * * *
+    ** INTRO  **
+    ** * * * * */
+
+    .intro {
+      background: var(--yellow);
+      font-family: nimbus-sans-condensed, sans-serif;
+      padding: 1.4em 1em
+    }
+
+    .intro p {
+      transform: rotate(-0.3deg);
+    }
+
+    /* * * * * *
+    ** LEGEND **
+    ** * * * * */
+
+    .legend {
+      background: var(--kelly-green);
+      color: var(--lilac);
+      border-bottom: solid var(--blue) 2vh;
+    }
+
+    legend td:last-child {
+      padding-left: 1rem;
+    }
+
+    .legend .tag--figma,
+    .legend .tag--slides,
+    .legend .tag--docs {
+      border: 1px solid black;
+    }
+
+    /* * * * * * *
+    ** RESOURCES *
+    ** * * * * * */
+
     .resources td:last-child {
       padding-left: 0.5em;
     }
@@ -192,14 +214,12 @@
       margin-right: 1em;
     }
 
+    /* * * * * * * * * *
+    ** COURSE HISTORY **
+    ** * * * * * * * * */
+
     .course-history td {
       padding: 0.25rem;
-    }
-
-    .legend .tag--figma,
-    .legend .tag--slides,
-    .legend .tag--docs {
-      border: 1px solid black;
     }
 
     .course-history th::after {
