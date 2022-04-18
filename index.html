@@ -376,11 +376,12 @@
     }
 
     const init = () => {
-      const first = [...document.querySelectorAll(".tag")];
-      const second = [...document.querySelectorAll("a")];
-      const third = [...document.querySelectorAll("p, th, td, h1, h2, h3, h4, h5, h6")];
-      const all = [].concat(first, second, third);
-      loop(first, second, third, all);
+      // Uncomment to enable the fade out animation
+      // const first = [...document.querySelectorAll(".tag")];
+      // const second = [...document.querySelectorAll("a")];
+      // const third = [...document.querySelectorAll("p, th, td, h1, h2, h3, h4, h5, h6")];
+      // const all = [].concat(first, second, third);
+      // loop(first, second, third, all);
     }
 
     document.addEventListener("DOMContentLoaded", init);
