@@ -1,0 +1,110 @@
+{
+  "legend": {
+    "types": {
+      "reference": "Instructional guides or otherwise files that describe how to do something",
+      "lecture": "Like references, but less concerned with practical things",
+      "exercise": "Activies you can do to gear your brain towards some larger objective"
+    },
+    "formats": {
+      "figma": "View-only access to a Figma file",
+      "slides": "View-only access to a Google Slides document",
+      "docs": "View-only access to a Google Docs document"
+    }
+  },
+  "resources": [
+    {
+      "title": "Making plans for self-growth",
+      "type": "exercise",
+      "format": "figma",
+      "url": "https://www.figma.com/proto/gM9smslvtePuNUnIPupSjR/Self-growth?page-id=0%3A1&node-id=3%3A781&viewport=241%2C48%2C0.04&scaling=min-zoom"
+    },
+    {
+      "title": "Build a business card style website",
+      "type": "exercise",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1Aa0Dxoc_JOIx6x0kWDJ86h8QHYiz-FpdAeJnmL9Cm7E/edit?usp=sharing"
+    },
+    {
+      "title": "Analyze a wireframe for a portfolio website",
+      "type": "exercise",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1X3AL7YNUqO1HnF_tdvib4ifvZWHBGoZuEc6IEjgX2wY/edit?usp=sharing"
+    },
+    {
+      "title": "How to document your work",
+      "type": "reference",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1yvebr5oRjGnhe8_kVcYEvdybI5nfP-DDLHFCxpLw0pU/edit?usp=sharing"
+    },
+    {
+      "title": "What makes a good artist website?",
+      "type": "reference",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1HfKL1cl-YjKAdb5tPyDixchiGMYKR77l4hda29cD808/edit?usp=sharing"
+    },
+    {
+      "title": "How to print your work",
+      "type": "reference",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1qVuKW_W3i-bDt-5xnPvStkDyAg4eD9ltGkUBLpm208Y/edit?usp=sharing"
+    },
+    {
+      "title": "Using art direction to make a wireframe come alive",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=2%3A2"
+    },
+    {
+      "title": "Limitations & opportunities with typography on the web",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=7%3A2524"
+    },
+    {
+      "title": "Finding a sense of direction with responsive typography",
+      "description": "(using type scales)",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=2%3A3"
+    },
+    {
+      "title": "Grid systems on the web",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=27%3A62"
+    },
+    {
+      "title": "Responsive images",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=2%3A4"
+    },
+    {
+      "title": "Quickstart for coding your own artist website",
+      "description": "An introduction to templating systems, along with a boilerplate/starter project",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/file/A6pkegWVsiAnDnlAd9tJYQ/Webdesign-crash-course?node-id=10%3A2727"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Technology B",
+      "objective": "Identifying emancipatory and oppressive forces in technology; what to do after recognition",
+      "dates": ["Fall 2022", "Fall 2023"],
+      "place": "Pratt Institute"
+    },
+    {
+      "title": "Design 3B",
+      "objective": "Making a portfolio",
+      "dates": ["Spring 2022"],
+      "place": "Rutgers University"
+    },
+    {
+      "title": "Technology A",
+      "objective": "Understanding technology and politics and mutually constititutive",
+      "dates": ["Fall 2021"],
+      "place": "Pratt Institute"
+    }
+  ]
+}
