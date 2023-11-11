@@ -15,7 +15,6 @@ export default function Home() {
         "m-0",
         "p-1",
         "sm:max-w-lg",
-        "sm:rotate-[0.3deg]"
       )}
     >
       <header>
@@ -23,21 +22,21 @@ export default function Home() {
           className={clsx(
             "bg-lilac",
             "text-kelly-green",
-            "px-1",
-            "py-2",
+            "px-3em/2",
+            "py-em/4",
             "font-extended"
           )}
         >
-          <h1 className={clsx("text-3", "text-center", "sm:text-left")}>
+          <h1 className={clsx()}>
             Center for Dizziness and Balance
           </h1>
         </section>
         <section
-          className={clsx("bg-yellow", "px-1", "py-3", "markdown", "sm:py-2")}
+          className={clsx("bg-yellow", "px-3em/2", "pt-em/2", "pb-em", "markdown")}
         >
           <p>
             This is the teaching portal for{" "}
-            <a href="https://tylerpaige.com">Tyler Paige</a>. I will list all of
+            <a href="https://tylerpaige.com" className="underline">Tyler Paige</a>. I will list all of
             my teaching materials here, like syllabi, workshops, and lectures.
           </p>
           <p>

@@ -5,6 +5,7 @@ function Tag({ children, className }) {
     <span
       className={clsx(
         "-text-2",
+        "md:-text-3",
         "font-bold",
         "uppercase",
         "px-em",
@@ -20,26 +21,31 @@ function Tag({ children, className }) {
   );
 }
 
-export function TypeTag({ type }) {
+export function TypeTag({ type, selected = false }) {
   const classNames = {
     default: [],
-    reference: ["bg-blue", "text-bright-green"],
-    exercise: ["bg-purple", "text-gold"],
-    lecture: ["bg-red", "text-white"],
+    reference: selected
+      ? ["bg-bright-green", "text-blue"]
+      : ["bg-blue", "text-bright-green"],
+    exercise: selected
+      ? ["bg-gold", "text-purple"]
+      : ["bg-purple", "text-gold"],
+    lecture: selected ? ["bg-white", "text-red"] : ["bg-red", "text-white"],
   };
   return (
     <Tag className={clsx(classNames[type] || classNames.default)}>{type}</Tag>
   );
 }
 
-export function FormatTag({ format }) {
+export function FormatTag({ format, selected = false }) {
   return (
     <Tag
       className={clsx(
         "rounded",
         "border-px",
-        "border-black",
-        "bg-kelly-green",
+        selected
+          ? ["border-kelly-green", "bg-black"]
+          : ["border-black", "bg-kelly-green"],
         "text-lilac"
       )}
     >
