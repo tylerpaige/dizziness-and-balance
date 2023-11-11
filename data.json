@@ -13,6 +13,52 @@
   },
   "resources": [
     {
+      "title": "Pondering the sky",
+      "description": "Is it any wonder that people believe conspiracy theories, when the sky is so strange?",
+      "type": "lecture",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1eNbWPYvbcZOU5VR90EI4dAWyMkptBSp8HvLLXqua_6M/edit?usp=sharing"
+    },
+    {
+      "title": "What is technology’s capacity to hold humanity?",
+      "type": "lecture",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1Nn5iJAwOqfTjHX_DXtqQ7p8d0TYlq4y7i1cHK3jvZWE/edit?usp=sharing"
+    },
+    {
+      "title": "Fashion, style, and the normalization of political ideologies",
+      "type": "lecture",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1LeadAWrFMN97y_vadOF6Y2PcslHpMbjI8cRntyIlgO4/edit?usp=sharing"
+    },
+    {
+      "title": "How to research like a designer",
+      "description": "dérive & detournement on the internet",
+      "type": "reference",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1-QTc7z2FMG4MoDDO2Hsb3REXUQbjl04-AEfgvK8oPhI/edit?usp=sharing"
+    },
+    {
+      "title": "How to critique",
+      "type": "reference",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1RdAzYTAs8zeiMiTbaE5-5JMIxlHfcJj24sRaIP-7sQI/edit?usp=sharing"
+    },
+    {
+      "title": "How to read images (according to Tyler)",
+      "description": "a taxonomy of image components and what questions to ask about them",
+      "type": "reference",
+      "format": "slides",
+      "url": "https://docs.google.com/presentation/d/1BOjjwJZbjTAvPRAbdVHaroSso9s0JAXsqRgGDXIR3DU/edit?usp=sharing"
+    },
+    {
+      "title": "Imagine the future",
+      "description": "an exercise in capturing ideas with images",
+      "type": "exercise",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1HCojt-uCfA9ybOaDK9EvlPYNL14OFF7BX_0SP2z0SdM/edit?usp=sharing"
+    },
+    {
       "title": "Making plans for self-growth",
       "type": "exercise",
       "format": "figma",
