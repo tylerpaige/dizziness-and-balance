@@ -8,9 +8,9 @@ function Tag({ children, className }) {
         "md:-text-3",
         "font-bold",
         "uppercase",
-        "px-em",
-        "pt-3em/4",
-        "pb-5em/8",
+        "px-1em",
+        "pt-3/4em",
+        "pb-5/8em",
         "inline-block",
         "text-center",
         className

@@ -1,29 +1,14 @@
 import clsx from "clsx";
-import { Legend } from "../components/Legend";
-import { Resources } from "../components/Resources";
-import { CourseHistory } from "../components/CourseHistory";
-import Head from "next/head";
 
-export default function Home() {
+export function Header() {
   return (
-    <div
-      className={clsx(
-        "text-0",
-        "bg-black",
-        "text-kelly-green",
-        "font-narrow",
-        "m-0",
-        "p-1",
-        "sm:max-w-lg",
-      )}
-    >
-      <header>
+    <header>
         <section
           className={clsx(
             "bg-lilac",
             "text-kelly-green",
-            "px-3em/2",
-            "py-em/4",
+            "px-3/2em",
+            "py-1/2em",
             "font-extended"
           )}
         >
@@ -32,7 +17,7 @@ export default function Home() {
           </h1>
         </section>
         <section
-          className={clsx("bg-yellow", "px-3em/2", "pt-em/2", "pb-em", "markdown")}
+          className={clsx("bg-yellow", "px-3/2em", "pt-1/2em", "pb-1em", "markdown")}
         >
           <p>
             This is the teaching portal for{" "}
@@ -49,11 +34,5 @@ export default function Home() {
           </p>
         </section>
       </header>
-      <main className="">
-        <Legend />
-        <Resources />
-        <CourseHistory />
-      </main>
-    </div>
-  );
+  )
 }

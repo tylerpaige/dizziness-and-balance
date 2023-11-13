@@ -10,7 +10,7 @@ export function TaggedRow({ type, format, children, className, ...props }) {
             "flex",
             "nowrap",
             "gap-px",
-            "sm:pb-em/4",
+            "sm:pb-1/4em",
             "sm:justify-start",
             "sm:translate-y-[-7%]"
           )}
@@ -26,8 +26,8 @@ export function TaggedRow({ type, format, children, className, ...props }) {
           "sm:mb-0",
           "sm:table-cell",
           "sm:align-top",
-          "sm:pl-em/2",
-          "sm:pb-em/4"
+          "sm:pl-1/2em",
+          "sm:pb-1/4em"
         )}
       >
         {children}

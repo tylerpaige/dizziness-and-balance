@@ -1,0 +1,24 @@
+@config "./tailwind.config.js";
+@import url("https://use.typekit.net/ngi2oai.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gutter: 1rem;
+  --base-font-size: 1rem;
+}
+
+@media screen and (min-width: theme("screens.md")) {
+  :root {
+    --gutter: 2rem;
+    --base-font-size: 1.25rem;
+  }
+}
+
+@layer base {
+  .markdown p {
+    @apply mb-1em;
+    @apply last:mb-0;
+  }
+}

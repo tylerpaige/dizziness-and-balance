@@ -7,7 +7,7 @@ import data from "../data.json";
 export function Resources() {
   return (
     <section className={clsx("mb-3")}>
-      <Subheading className="mt-2em mb-em">Resources</Subheading>
+      <Subheading className="mt-2em mb-1em">Resources</Subheading>
       <table>
         <tbody>
           {data.resources.map((resource, index) => (

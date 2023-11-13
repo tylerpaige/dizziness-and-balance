@@ -3,9 +3,9 @@ import { Subheading } from "./Subheading";
 import data from "../data.json";
 
 export function CourseHistory() {
-  const rowClasses = clsx("block", "mb-3em/2", "sm:mb-em");
+  const rowClasses = clsx("block", "mb-3/2em", "sm:mb-1em");
   const cellClasses = clsx("inline", "align-top");
-  const bodyCellClasses = clsx("after:inline-block", "after:w-em");
+  const bodyCellClasses = clsx("after:inline-block", "after:w-1em");
   return (
     <section className={clsx("")}>
       <Subheading>Course History</Subheading>

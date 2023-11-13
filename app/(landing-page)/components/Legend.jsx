@@ -26,14 +26,14 @@ export function Legend() {
       className={clsx(
         "bg-kelly-green",
         "text-lilac",
-        "px-3em/2",
-        "pb-em",
-        "pt-em/2",
+        "px-3/2em",
+        "pb-1em",
+        "pt-1/2em",
         "overflow-auto"
       )}
     >
       <div className="-text-1">
-        <h3 className={clsx("font-extended", "mb-em/2")}>Legend</h3>
+        <h3 className={clsx("font-extended", "mb-1/2em")}>Legend</h3>
         <div className={clsx("flex", "flex-wrap", "gap-2px")}>
           {Object.entries(data.legend.types).map(([type, description]) => (
             <button
@@ -54,7 +54,7 @@ export function Legend() {
             </button>
           ))}
         </div>
-        <div className={clsx(selection?.title ? "block" : "hidden", "mt-em")}>
+        <div className={clsx(selection?.title ? "block" : "hidden", "mt-1em")}>
           {selection.title && (
             <p>{selection.description}</p>
           )}
