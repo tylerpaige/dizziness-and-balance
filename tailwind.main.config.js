@@ -86,8 +86,8 @@ export const defaultConfig = {
         return acc;
       }, {}))(),
     pxSizes: (() =>
-      [1, 2].reduce((acc, px) => {
-        acc[`${1}px`] = `${px}px`;
+      [1, 2, 3].reduce((acc, px) => {
+        acc[`${px}px`] = `${px}px`;
         return acc;
       }, {}))(),
     gutterSizes: (() =>

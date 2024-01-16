@@ -48,6 +48,7 @@ const config = {
       white: "#ffffff",
       gold: "#FFB416",
       gray: "#646464",
+      current: "currentColor",
     },
     fontFamily: {
       narrow: ["nimbus-sans-condensed", "Arial Narrow", "sans-serif"],
@@ -108,6 +109,12 @@ const config = {
       ...theme("spacing"),
       ...theme("percentageSizes"),
       ...theme("keywordSizes"),
+    }),
+    outlineWidth: ({ theme }) => ({
+      ...theme("pxSizes"),
+    }),
+    outlineOffset: ({ theme }) => ({
+      ...theme("pxSizes"),
     }),
     extend: {},
   },

@@ -36,28 +36,26 @@ export function Legend() {
         <h3 className={clsx("font-extended", "mb-1/2em")}>Legend</h3>
         <div className={clsx("flex", "flex-wrap", "gap-2px")}>
           {Object.entries(data.legend.types).map(([type, description]) => (
-            <button
-              type="button"
+            <TypeTag
+              component="button"
               onClick={() => handleSelection(type, description)}
               key={`legend-type-${type}`}
-            >
-              <TypeTag type={type} selected={selection.title === type} />
-            </button>
+              type={type}
+              selected={selection.title === type}
+            />
           ))}
           {Object.entries(data.legend.formats).map(([format, description]) => (
-            <button
-              type="button"
+            <FormatTag
+              component="button"
               onClick={() => handleSelection(format, description)}
               key={`legend-format-${format}`}
-            >
-              <FormatTag format={format} selected={selection.title === format} />
-            </button>
+              format={format}
+              selected={selection.title === format}
+            />
           ))}
         </div>
         <div className={clsx(selection?.title ? "block" : "hidden", "mt-1em")}>
-          {selection.title && (
-            <p>{selection.description}</p>
-          )}
+          {selection.title && <p>{selection.description}</p>}
         </div>
       </div>
     </section>

@@ -3,7 +3,8 @@
     "types": {
       "reference": "Instructional guides or otherwise files that describe how to do something",
       "lecture": "Like references, but less concerned with practical things",
-      "exercise": "Activies you can do to gear your brain towards some larger objective"
+      "exercise": "Activies you can do to gear your brain towards a skill or concept",
+      "assignment": "Like exercises, but larger in scope and more open-ended"
     },
     "formats": {
       "figma": "View-only access to a Figma file",
@@ -134,6 +135,12 @@
     }
   ],
   "courses": [
+    {
+      "title": "Forms with Collectivity",
+      "objective": "How does collectivity affect visual language and design processes? And what can it do for us?",
+      "dates": ["Spring 2024"],
+      "place": "Pratt Institute"
+    },
     {
       "title": "Technology B",
       "objective": "Identifying emancipatory and oppressive forces in technology; what to do after recognition",
