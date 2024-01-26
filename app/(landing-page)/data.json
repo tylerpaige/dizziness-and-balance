@@ -14,6 +14,27 @@
   },
   "resources": [
     {
+      "title": "Collaboration as a transceiver",
+      "description": "Design protocols for sending and receiving signals",
+      "type": "assignment",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1m_7yz_4JY2eZ2GuGjqGlcwIn4COHpO5hZOIJyCXKMv8/edit?usp=sharing"
+    },
+    {
+      "title": "Warming up to collaborating",
+      "description": "Use collaborative tools to explore the overlaps between people",
+      "type": "exercise",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1DwxYPqFST01hSeXfsM8DCdKU01aneRTOHOSszQKp0Mg/edit?usp=sharing"
+    },
+    {
+      "title": "What are some collaborative tools?",
+      "description": "Why are they often so business-focused, and how can we use them for our creative purposes?",
+      "type": "reference",
+      "format": "figma",
+      "url": "https://www.figma.com/proto/JvqiccQ473Bz4jiaoEF3h1?node-id=1211:2"
+    },
+    {
       "title": "Pondering the sky",
       "description": "Is it any wonder that people believe conspiracy theories, when the sky is so strange?",
       "type": "lecture",
