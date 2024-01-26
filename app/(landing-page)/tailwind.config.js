@@ -40,6 +40,7 @@ const config = {
       lavender: "#E6ADFF",
       lilac: "#D9DDFF",
       "kelly-green": "#008000",
+      "dark-green": "rgb(0,83,0)",
       brown: "#633800",
       teal: "#00848B",
       purple: "#592173",

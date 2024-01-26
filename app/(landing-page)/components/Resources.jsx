@@ -19,12 +19,12 @@ export function Resources() {
               <>
                 <Link
                   href={resource.url}
-                  className={clsx("visited:text-gray", "underline")}
+                  className={clsx("text-kelly-green", "visited:text-dark-green", "underline")}
                 >
                   {resource.title}
                 </Link>
                 {resource.description && (
-                  <span className="">
+                  <span className="text-gray">
                     &nbsp;&nbsp;&nbsp;{resource.description}
                   </span>
                 )}
