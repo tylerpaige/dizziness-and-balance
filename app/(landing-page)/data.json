@@ -14,6 +14,32 @@
   },
   "resources": [
     {
+      "title": "How to come up with a ‘big idea’",
+      "description": "a demonstration of one way to generate an artistic inquiry",
+      "type": "exercise",
+      "format": "figma",
+      "url": "https://www.figma.com/file/E6rRRkO1Y5D8Gx3gyPvsVu/Exercise%3A-coming-up-with-an-inquiry-(blank)?type=whiteboard&node-id=0%3A1&t=qUlmuZc7wzeqAnYC-1"
+    },
+    {
+      "title": "How to find common ground within a group",
+      "type": "exercise",
+      "format": "figma",
+      "url": "https://www.figma.com/file/dminQRfTt0kBnGWSmTvKR0/4-person-group-commonalities?type=whiteboard&t=oiNPOorCzH8vDScp-1"
+    },
+    {
+      "title": "Occupy Wall Street: a case study in consensus, horizontality, and how the status quo responds",
+      "type": "lecture",
+      "format": "figma",
+      "url": "https://www.figma.com/proto/JvqiccQ473Bz4jiaoEF3h1/Visual-Language-B---%22Forms-With-Collectivity%22?page-id=1563%3A2&type=design&node-id=1563-10&viewport=161%2C495%2C0.08&t=6rs1M1pvOLBuh5mh-1&scaling=contain&mode=design"
+    },
+    {
+      "title": "Giving instructions, following instructions",
+      "description": "experiments in leadership, authority, and mutual responsibility within a group",
+      "type": "assignment",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1frA_9jqoDoxGz8AEjCqZ_QW9i0pl_QvzMm-RaOmmxBk/edit?usp=sharing"
+    },
+    {
       "title": "Collaboration as a transceiver",
       "description": "Design protocols for sending and receiving signals",
       "type": "assignment",
