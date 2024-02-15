@@ -1,7 +1,15 @@
 import clsx from "clsx";
 import { TypeTag, FormatTag } from "./Tag";
 
-export function TaggedRow({ type, format, children, className, ...props }) {
+export function TaggedRow({
+  type,
+  format,
+  children,
+  className,
+  typeTag = {},
+  formatTag = {},
+  ...props
+}) {
   return (
     <tr className={clsx(className)} {...props}>
       <td className={clsx("block", "sm:table-cell", "sm:align-top")}>
@@ -15,8 +23,8 @@ export function TaggedRow({ type, format, children, className, ...props }) {
             "sm:translate-y-[-7%]"
           )}
         >
-          {type && <TypeTag type={type} />}
-          {format && <FormatTag format={format} />}
+          {type && <TypeTag type={type} {...typeTag} />}
+          {format && <FormatTag format={format} {...formatTag} />}
         </div>
       </td>
       <td

@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { Header } from "./components/Header";
-import { Legend } from "./components/Legend";
 import { Resources } from "./components/Resources";
 import { CourseHistory } from "./components/CourseHistory";
 
@@ -24,7 +23,6 @@ export default function Home() {
     >
       <Header />
       <main className="">
-        <Legend />
         <Resources />
         <CourseHistory />
       </main>

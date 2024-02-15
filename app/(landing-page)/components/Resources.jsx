@@ -1,19 +1,38 @@
+"use client";
+
 import clsx from "clsx";
 import Link from "next/link";
 import { Subheading } from "./Subheading";
 import { TaggedRow } from "./TaggedRow";
 import data from "../data.json";
+import { FilterPanel } from "./FilterPanel";
+import { useEffect, useState, useCallback } from "react";
 
 export function Resources() {
+  const [filter, setFilter] = useState(null);
+  const [resources, setResources] = useState(data.resources);
+  useEffect(() => {
+    if (filter) {
+      setResources(
+        data.resources.filter((resource) => resource.type === filter)
+      );
+    } else {
+      setResources(data.resources);
+    }
+  });
+  const handleFilterChange = useCallback((filter) => {
+    setFilter(filter);
+  }, []);
+
   return (
     <section className={clsx("mb-3")}>
-      <Subheading className="mt-2em mb-1em">Resources</Subheading>
+      <Subheading className="mt-2em mb-1/2em">Resources</Subheading>
+      <FilterPanel onChange={handleFilterChange} className="mb-3/2em text-gray"/>
       <table>
         <tbody>
-          {data.resources.map((resource, index) => (
+          {resources.map((resource, index) => (
             <TaggedRow
               type={resource.type}
-              format={resource.format}
               key={`resource-${index}`}
             >
               <>

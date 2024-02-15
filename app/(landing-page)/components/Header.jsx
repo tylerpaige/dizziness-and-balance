@@ -17,7 +17,7 @@ export function Header() {
           </h1>
         </section>
         <section
-          className={clsx("bg-yellow", "px-3/2em", "pt-1/2em", "pb-1em", "markdown")}
+          className={clsx("bg-yellow", "px-3/2em", "pt-1/2em", "pb-1em", "markdown", "border-b-[1em]", "border-b-kelly-green")}
         >
           <p>
             This is the teaching portal for{" "}
