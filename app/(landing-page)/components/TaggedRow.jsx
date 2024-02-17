@@ -19,7 +19,7 @@ export function TaggedRow({
             "nowrap",
             "gap-px",
             "sm:pb-1/4em",
-            "sm:justify-start",
+            "sm:justify-end",
             "sm:translate-y-[-7%]"
           )}
         >

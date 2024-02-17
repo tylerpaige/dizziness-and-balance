@@ -19,7 +19,7 @@ export function Resources() {
     } else {
       setResources(data.resources);
     }
-  });
+  }, [filter, setResources]);
   const handleFilterChange = useCallback((filter) => {
     setFilter(filter);
   }, []);
