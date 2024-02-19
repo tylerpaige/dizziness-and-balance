@@ -14,6 +14,20 @@
   },
   "resources": [
     {
+      "title": "Reading comprehension/discussion notes template",
+      "description": "a simple template for taking notes on readings and preparing for class discussions",
+      "type": "reference",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1vI7fTdwGr7t5xrpbjS9vKNeKKy_UF9GBl7M2Iq5pakQ/edit?usp=sharing"
+    },
+    {
+      "title": "Mapping hierarchies and power dynamics",
+      "description": "an open-ended exercise to explore how person experiences power in their daily life",
+      "type": "exercise",
+      "format": "docs",
+      "url": "https://docs.google.com/document/d/1Pnzlxuhba6JoEqx16EiTx_2oaf6PbyPwrpvSaboPAHc/edit?usp=sharing"
+    },
+    {
       "title": "How to come up with a ‘big idea’",
       "description": "a demonstration of one way to generate an artistic inquiry",
       "type": "exercise",
@@ -22,12 +36,14 @@
     },
     {
       "title": "How to find common ground within a group",
+      "description": "one way for people to explore shared interests, while keeping their differences on the table",
       "type": "exercise",
       "format": "figma",
       "url": "https://www.figma.com/file/dminQRfTt0kBnGWSmTvKR0/4-person-group-commonalities?type=whiteboard&t=oiNPOorCzH8vDScp-1"
     },
     {
-      "title": "Occupy Wall Street: a case study in consensus, horizontality, and how the status quo responds",
+      "title": "Occupy Wall Street",
+      "description": "a case study in consensus, horizontality, and how the status quo responds",
       "type": "lecture",
       "format": "figma",
       "url": "https://www.figma.com/proto/JvqiccQ473Bz4jiaoEF3h1/Visual-Language-B---%22Forms-With-Collectivity%22?page-id=1563%3A2&type=design&node-id=1563-10&viewport=161%2C495%2C0.08&t=6rs1M1pvOLBuh5mh-1&scaling=contain&mode=design"
