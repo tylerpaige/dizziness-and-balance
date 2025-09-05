@@ -14,6 +14,26 @@
   },
   "resources": [
     {
+      "title": "Identifying a technology’s formal essence",
+      "description": "A lecture/exercise that explains two methodologies for evoking a subject rather than directly depicting it",
+      "type": "exercise",
+      "format": "figma",
+      "url": "https://www.notion.so/ty-po/Identifying-formal-essence-24b13163e277815081b7ed0a8bc9bb6a"
+    },
+    {
+      "title": "Online, collective publishing: The HTML Review, Other Internet, Dragonfly Eye, The Creative Independent",
+      "type": "lecture",
+      "format": "figma",
+      "url": "https://www.figma.com/proto/GxHelBTePaAzCPnrsJSdGG/Visual-Language-B---%22Forms-With-Collectivity%22--2025-?page-id=3182%3A36&node-id=3182-37&p=f&viewport=213%2C96%2C0.04&t=XSXr662I1obkUT37-1&scaling=contain&content-scaling=fixed"
+    },
+    {
+      "title": "Collaborative companies: O-R-G, Decentralized Agency, and Neo-metabolism",
+      "description": "an overview of some companies that embrace collaboration, cooperation, and porous bounaries.",
+      "type": "lecture",
+      "format": "figma",
+      "url": "https://www.figma.com/proto/GxHelBTePaAzCPnrsJSdGG/Visual-Language-B---%22Forms-With-Collectivity%22--2025-?page-id=3141%3A74&node-id=3141-75&p=f&viewport=177%2C452%2C0.02&t=MjvWvbiqgEsn7FBn-1&scaling=contain&content-scaling=fixed"
+    },
+    {
       "title": "Reading comprehension/discussion notes template",
       "description": "a simple template for taking notes on readings and preparing for class discussions",
       "type": "reference",
@@ -201,14 +221,16 @@
     {
       "title": "Visual Language B (aka ‘Forms with Collectivity’)",
       "objective": "How does collectivity affect visual language and design processes? And what can it do for us?",
-      "dates": ["Spring 2024"],
-      "place": "Pratt Institute"
+      "dates": ["Spring 2024", "Spring 2025"],
+      "place": "Pratt Institute",
+      "url": "https://docs.google.com/document/d/1Play_qUFiWZpOKDeHPlDc7pRlDj9U3W7zhwUl9g7jZ8/edit?usp=sharing"
     },
     {
       "title": "Technology B",
       "objective": "Recognizing emancipatory and oppressive forces in technology; what to do after that recognition",
-      "dates": ["Fall 2022", "Fall 2023"],
-      "place": "Pratt Institute"
+      "dates": ["Fall 2022", "Fall 2023", "Fall 2024", "Fall 2025"],
+      "place": "Pratt Institute",
+      "url": "https://www.notion.so/ty-po/Technology-B-2025-24b13163e277805caee1edbb00818dbb"
     },
     {
       "title": "Design 3B",
