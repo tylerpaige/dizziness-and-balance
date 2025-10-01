@@ -1,5 +1,4 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/next"
 import clsx from "clsx";
 import "./globals.css";
 
@@ -13,7 +12,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={clsx("font-normal", "bg-black", "m-0")}>{children}</body>
       <GoogleAnalytics gaId="G-24GL3E5F1J" />
-      <Analytics />
     </html>
   );
 }
