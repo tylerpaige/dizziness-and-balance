@@ -18,7 +18,7 @@ export default function Home() {
         "font-narrow",
         "m-0",
         "p-1",
-        "sm:max-w-lg",
+        "sm:max-w-lg"
       )}
     >
       <Header />

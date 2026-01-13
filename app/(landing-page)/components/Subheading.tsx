@@ -1,7 +1,13 @@
 import clsx from "clsx";
-import { missingMarginClass } from "../../../utilities/class-names";
+import { ReactNode } from "react";
+import { missingMarginClass } from "../../../lib/class-names";
 
-export function Subheading({ children, className }) {
+interface SubheadingProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export function Subheading({ children, className }: SubheadingProps) {
   return (
     <h3
       className={clsx(

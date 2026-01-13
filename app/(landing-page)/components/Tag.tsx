@@ -1,7 +1,17 @@
 import clsx from "clsx";
+import { ReactNode, ComponentType, HTMLAttributes } from "react";
 
-function Tag({ children, className, component = "span", ...props }) {
-  const Component = props.href ? "a" : component;
+interface TagProps extends HTMLAttributes<HTMLElement> {
+  children: ReactNode;
+  className?: string;
+  component?: ComponentType<any> | string;
+  href?: string;
+}
+
+function Tag({ children, className, component = "span", ...props }: TagProps) {
+  const Component = (props.href ? "a" : component) as ComponentType<any>;
+  const componentProps =
+    component === "button" ? { type: "button" as const, ...props } : props;
   return (
     <Component
       className={clsx(
@@ -16,17 +26,27 @@ function Tag({ children, className, component = "span", ...props }) {
         "text-center",
         className
       )}
-      {...(component === "button" ? { type: "button" } : {})}
-      {...props}
+      {...componentProps}
     >
       {children}
     </Component>
   );
 }
 
-export function TypeTag({ type, selected = false, className, ...props }) {
-  const classNames = {
-    default: [],
+interface TypeTagProps extends Omit<TagProps, "type" | "children"> {
+  type: "reference" | "exercise" | "assignment" | "lecture";
+  selected?: boolean;
+  children?: ReactNode;
+}
+
+export function TypeTag({
+  type,
+  selected = false,
+  className,
+  children,
+  ...props
+}: TypeTagProps) {
+  const classNames: Record<string, string[]> = {
     reference: selected
       ? ["bg-bright-green", "text-blue"]
       : ["bg-blue", "text-bright-green"],
@@ -46,7 +66,7 @@ export function TypeTag({ type, selected = false, className, ...props }) {
   return (
     <Tag
       className={clsx(
-        classNames[type] || classNames.default,
+        classNames[type],
         outlineClasses,
         selected && "outline",
         "focus-visible:outline-dashed",
@@ -54,12 +74,24 @@ export function TypeTag({ type, selected = false, className, ...props }) {
       )}
       {...props}
     >
-      {type}
+      {children ?? type}
     </Tag>
   );
 }
 
-export function FormatTag({ format, selected = false, className, ...props }) {
+interface FormatTagProps extends Omit<TagProps, "children"> {
+  format: string;
+  selected?: boolean;
+  children?: ReactNode;
+}
+
+export function FormatTag({
+  format,
+  selected = false,
+  className,
+  children,
+  ...props
+}: FormatTagProps) {
   return (
     <Tag
       className={clsx(
@@ -74,7 +106,7 @@ export function FormatTag({ format, selected = false, className, ...props }) {
       )}
       {...props}
     >
-      {format}
+      {children ?? format}
     </Tag>
   );
 }

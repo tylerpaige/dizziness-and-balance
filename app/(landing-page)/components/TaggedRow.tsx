@@ -1,5 +1,16 @@
 import clsx from "clsx";
+import { ReactNode, HTMLAttributes } from "react";
 import { TypeTag, FormatTag } from "./Tag";
+import { ResourceType, FormatType } from "../types";
+
+interface TaggedRowProps extends HTMLAttributes<HTMLTableRowElement> {
+  type?: ResourceType;
+  format?: FormatType;
+  children: ReactNode;
+  className?: string;
+  typeTag?: Partial<Omit<React.ComponentProps<typeof TypeTag>, "type">>;
+  formatTag?: Partial<Omit<React.ComponentProps<typeof FormatTag>, "format">>;
+}
 
 export function TaggedRow({
   type,
@@ -9,7 +20,7 @@ export function TaggedRow({
   typeTag = {},
   formatTag = {},
   ...props
-}) {
+}: TaggedRowProps) {
   return (
     <tr className={clsx(className)} {...props}>
       <td className={clsx("block", "sm:table-cell", "sm:align-top")}>

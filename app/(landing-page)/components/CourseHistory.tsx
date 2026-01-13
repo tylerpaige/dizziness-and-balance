@@ -2,6 +2,9 @@ import clsx from "clsx";
 import { Subheading } from "./Subheading";
 import data from "../data.json";
 import Link from "next/link";
+import { Data } from "../types";
+
+const typedData = data as Data;
 
 export function CourseHistory() {
   const rowClasses = clsx("block", "mb-3/2em", "sm:mb-1em");
@@ -20,7 +23,7 @@ export function CourseHistory() {
           </tr>
         </thead>
         <tbody>
-          {data.courses.map((course, index) => (
+          {typedData.courses.map((course, index) => (
             <tr key={`course-${index}`} className={clsx(rowClasses)}>
               <td className={clsx(cellClasses, bodyCellClasses)}>
                 {course.place}
@@ -28,10 +31,10 @@ export function CourseHistory() {
               <td className={clsx(cellClasses, bodyCellClasses)}>
                 {course.url ? (
                   <Link href={course.url} className="underline">
-                    “{course.title}”
+                    "{course.title}"
                   </Link>
                 ) : (
-                  <span>“{course.title}”</span>
+                  <span>"{course.title}"</span>
                 )}
               </td>
               <td
