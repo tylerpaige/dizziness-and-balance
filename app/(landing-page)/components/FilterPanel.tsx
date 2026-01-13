@@ -39,7 +39,7 @@ export function FilterPanel({
 
   return (
     <section className={clsx(className)}>
-      <div className="-text-1 flex flex-row nowrap gap-1em">
+      <div className="text-neg-1 flex flex-row nowrap gap-1em">
         <h3 className={clsx("font-extended", "mb-1/2em")}>Filter:</h3>
         <div>
           <div className={clsx("flex", "flex-wrap", "gap-2px")}>

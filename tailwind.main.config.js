@@ -12,7 +12,8 @@ export function typeScale({
   };
 
   Array.from({ length: numberOfSmallSizes }).forEach((_, i) => {
-    const key = -1 * (numberOfSmallSizes - i);
+    // const key = -1 * (numberOfSmallSizes - i);
+    const key = `neg-${(numberOfSmallSizes - i)}`;
     const exponent = -1 * (numberOfSmallSizes - i);
     const power = Math.pow(base, exponent).toFixed(3);
     const value = `calc(${coefficient} * ${power})`;

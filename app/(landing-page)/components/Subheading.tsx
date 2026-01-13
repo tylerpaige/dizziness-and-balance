@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { ReactNode } from "react";
-import { missingMarginClass } from "../../../lib/class-names";
+import { missingMarginClass } from "../../../lib";
 
 interface SubheadingProps {
   children: ReactNode;

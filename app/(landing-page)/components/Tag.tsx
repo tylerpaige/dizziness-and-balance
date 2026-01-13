@@ -15,8 +15,8 @@ function Tag({ children, className, component = "span", ...props }: TagProps) {
   return (
     <Component
       className={clsx(
-        "-text-2",
-        "md:-text-3",
+        "text-neg-2",
+        "md:text-neg-3",
         "font-bold",
         "uppercase",
         "px-1em",
@@ -68,7 +68,7 @@ export function TypeTag({
       className={clsx(
         classNames[type],
         outlineClasses,
-        selected && "outline",
+        selected ? "outline-solid" : "outline-none",
         "focus-visible:outline-dashed",
         className
       )}
@@ -95,12 +95,12 @@ export function FormatTag({
   return (
     <Tag
       className={clsx(
-        "rounded",
+        "rounded-sm",
         "border-px",
         selected
           ? ["border-kelly-green", "bg-black"]
           : ["border-black", "bg-kelly-green"],
-        "focus-visible:outline focus-visible:outline-current focus-visible:outline-1px focus-visible:-outline-offset-1px",
+        "focus-visible:outline-solid focus-visible:outline-current focus-visible:outline-1px focus-visible:-outline-offset-1px",
         "text-lilac",
         className
       )}

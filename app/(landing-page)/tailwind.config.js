@@ -122,5 +122,4 @@ const config = {
   plugins: [],
 };
 
-console.log(config)
 export default config;
