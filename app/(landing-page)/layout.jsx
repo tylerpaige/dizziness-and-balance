@@ -10,8 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={clsx("font-normal", "bg-black", "m-0")}>{children}</body>
-      <GoogleAnalytics gaId="G-24GL3E5F1J" />
+      <body className={clsx("font-normal", "bg-black", "m-0")}>
+        {children}
+        <GoogleAnalytics gaId="G-24GL3E5F1J" />
+      </body>
     </html>
   );
 }
