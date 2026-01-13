@@ -2,6 +2,10 @@ import clsx from "clsx";
 import { Header } from "./components/Header";
 import { Resources } from "./components/Resources";
 import { CourseHistory } from "./components/CourseHistory";
+import data from "./data.json";
+import { Data } from "./types";
+
+const typedData = data as Data;
 
 export const metadata = {
   title: "Center for Dizziness and Balance",
@@ -23,8 +27,11 @@ export default function Home() {
     >
       <Header />
       <main className="">
-        <Resources />
-        <CourseHistory />
+        <Resources
+          resources={typedData.resources}
+          legend={typedData.legend}
+        />
+        <CourseHistory courses={typedData.courses} />
       </main>
     </div>
   );

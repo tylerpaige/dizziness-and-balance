@@ -2,27 +2,27 @@
 
 import clsx from "clsx";
 import Link from "next/link";
-import { Subheading } from "./Subheading";
-import { TaggedRow } from "./TaggedRow";
-import data from "../data.json";
-import { FilterPanel } from "./FilterPanel";
 import { useEffect, useState, useCallback } from "react";
 import { Resource, ResourceType, Data } from "../types";
+import { Subheading } from "./Subheading";
+import { TaggedRow } from "./TaggedRow";
+import { FilterPanel } from "./FilterPanel";
 
-const typedData = data as Data;
+interface ResourcesProps {
+  resources: Resource[];
+  legend: Data["legend"];
+}
 
-export function Resources() {
+export function Resources({ resources: allResources, legend }: ResourcesProps) {
   const [filter, setFilter] = useState<ResourceType | null>(null);
-  const [resources, setResources] = useState<Resource[]>(typedData.resources);
+  const [resources, setResources] = useState<Resource[]>(allResources);
   useEffect(() => {
     if (filter) {
-      setResources(
-        typedData.resources.filter((resource) => resource.type === filter)
-      );
+      setResources(allResources.filter((resource) => resource.type === filter));
     } else {
-      setResources(typedData.resources);
+      setResources(allResources);
     }
-  }, [filter]);
+  }, [filter, allResources]);
   const handleFilterChange = useCallback((filter: ResourceType | null) => {
     setFilter(filter);
   }, []);
@@ -31,6 +31,7 @@ export function Resources() {
     <section className={clsx("mb-3")}>
       <Subheading className="mt-2em mb-1/2em">Resources</Subheading>
       <FilterPanel
+        types={legend.types}
         onChange={handleFilterChange}
         className="mb-3/2em text-gray"
       />

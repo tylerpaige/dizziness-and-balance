@@ -1,12 +1,13 @@
 import clsx from "clsx";
-import { Subheading } from "./Subheading";
-import data from "../data.json";
 import Link from "next/link";
-import { Data } from "../types";
+import { Course } from "../types";
+import { Subheading } from "./Subheading";
 
-const typedData = data as Data;
+interface CourseHistoryProps {
+  courses: Course[];
+}
 
-export function CourseHistory() {
+export function CourseHistory({ courses }: CourseHistoryProps) {
   const rowClasses = clsx("block", "mb-3/2em", "sm:mb-1em");
   const cellClasses = clsx("inline", "align-top");
   const bodyCellClasses = clsx("after:inline-block", "after:w-1em");
@@ -23,7 +24,7 @@ export function CourseHistory() {
           </tr>
         </thead>
         <tbody>
-          {typedData.courses.map((course, index) => (
+          {courses.map((course, index) => (
             <tr key={`course-${index}`} className={clsx(rowClasses)}>
               <td className={clsx(cellClasses, bodyCellClasses)}>
                 {course.place}
