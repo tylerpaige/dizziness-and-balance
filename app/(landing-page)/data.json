@@ -14,6 +14,34 @@
   },
   "resources": [
     {
+      "title": "Classification and latent space",
+      "description": "How problematics of modernist classification gets repeated in the age of AI; and how latent space exists up until the moment of classification.",
+      "type": "lecture",
+      "format": "figma",
+      "url": "https://www.figma.com/slides/jWBfHq9Mun3RlsSX91PmpM/Week-6--Classification---Latent-Space?node-id=1-1034&t=DUjhoFuxvBOE9teG-0"
+    },
+    {
+      "title": "What does a data set do?",
+      "description": "Open-ended look at “representation” and how an image moves from “depiction” to “delegation” as it becomes part of a data set.",
+      "type": "lecture",
+      "format": "figma",
+      "url": "https://www.figma.com/slides/TE7fSF0pqkybYiQDAJSuad"
+    },
+    {
+      "title": "Design an image-text relationship using machine learning",
+      "description": "You must decide to work with machine learning or work against it.",
+      "type": "assignment",
+      "format": "webpage",
+      "url": "https://ty-po.notion.site/Project-2-3d613163e27780f580cfc911c10cca9a"
+    },
+    {
+      "title": "Pretend to be a Generative Adversarial Network (GAN)",
+      "description": "Instruct a collaborator to make a portrait of you by designing procedures for measuring features in the image. This assignment is meant to teach about crafting authorship programmatially.",
+      "type": "assignment",
+      "format": "webpage",
+      "url": "https://ty-po.notion.site/Project-1-Self-portrait-via-GAN-LARP-3d613163e27780b1b74be8e05f1e4a1d"
+    },
+    {
       "title": "Identifying a technology’s formal essence",
       "description": "A lecture/exercise that explains two methodologies for evoking a subject rather than directly depicting it",
       "type": "exercise",
@@ -219,9 +247,16 @@
   ],
   "courses": [
     {
+      "title": "Technology B (redesigned)",
+      "objective": "How has authorship changed in an AI-saturated landscape?",
+      "dates": ["Fall 2026"],
+      "place": "Pratt Institute",
+      "url": "https://ty-po.notion.site/Technology-B-2026-3c813163e27780159a64cb36e5f1fd42"
+    },
+    {
       "title": "Visual Language B (aka ‘Forms with Collectivity’)",
       "objective": "How does collectivity affect visual language and design processes? And what can it do for us?",
-      "dates": ["Spring 2024", "Spring 2025"],
+      "dates": ["Spring 2024", "Spring 2025", "Spring 2026"],
       "place": "Pratt Institute",
       "url": "https://docs.google.com/document/d/1Play_qUFiWZpOKDeHPlDc7pRlDj9U3W7zhwUl9g7jZ8/edit?usp=sharing"
     },
